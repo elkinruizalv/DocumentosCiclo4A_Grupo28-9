@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "1dcc5478-9b9b-4e24-baa7-ba59a43b184f",
+		"name": "Registraduria2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22955846"
+	},
+	"item": [
+		{
+			"name": "CrearPartido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n\"nombre\": \"Cambio Radical\",\r\n\"lema\": \"Cambio Radical Siempre\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/partidos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"partidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearCandidato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n\"cedula\": 6789021,\r\n\"numero_resolucion\": \"333333\",\r\n\"nombre\": \"Laura\",\r\n\"apellido\": \"Arias\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/candidatos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMesa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n\"numero\": 3,\r\n\"cantidad_inscritos\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/mesas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"mesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_AgrePartidoCandi",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/candidatos/63690c45da56f1b4defb318b/partido/6367c59cda56f1b4defb3187",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"candidatos",
+						"63690c45da56f1b4defb318b",
+						"partido",
+						"6367c59cda56f1b4defb3187"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETRegistraduria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/resultados",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"resultados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarRegistraduria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n\"numero\": 1,\r\n\"cantidad_inscritos\": 60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/resultados/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"resultados",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarRegistraduria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/resultados/636945f1da56f1b4defb318e",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"resultados",
+						"636945f1da56f1b4defb318e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearResultado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mesa\":{},\r\n    \"candidato\":{}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000//resultados/mesa/6367ca25da56f1b4defb3189/candidato/6367c4fdda56f1b4defb3185",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"",
+						"resultados",
+						"mesa",
+						"6367ca25da56f1b4defb3189",
+						"candidato",
+						"6367c4fdda56f1b4defb3185"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarResultado",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mesa\":{},\r\n    \"candidato\":{}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000//resultados/63692405da56f1b4defb318d/mesa/6367c8f6da56f1b4defb3188/candidato/6367c56eda56f1b4defb3186",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"",
+						"resultados",
+						"63692405da56f1b4defb318d",
+						"mesa",
+						"6367c8f6da56f1b4defb3188",
+						"candidato",
+						"6367c56eda56f1b4defb3186"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
